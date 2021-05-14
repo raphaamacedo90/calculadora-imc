@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+
+body{
+    background-color: rgb(84, 88, 88);  
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    
+}
+.container{
+    background-color: rgb(107, 172, 168);
+    border-radius: 2rem 2rem 2rem 2rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-evenly;     
+    height: 100vh;
+    width: 70vh;    
+    margin-top: 0 auto;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+}
+  
+.input{
+
+    display: flex;
+    width: 300px;
+    height: 0;
+    justify-content: space-between;    
+    align-items: center; 
+    font-size: 30px;
+    margin-top: 0 auto;
+        
+}
+
+.input input {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border:none;
+    outline: 0;
+    font: bold 1.5rem serif;
+    text-align: center;
+  }
+  
+.container button {
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    border:none;
+    outline: 0;
+    font: bold 1.8rem serif;
+    text-align: center;
+}  
+
+
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;    
+    text-align: center;
+}
+
+@media screen and (min-width : 200px) and (max-width:320px) {
+
+.container{
+    overflow: hidden;
+} 
+
+.input input{
+
+    width: 240px;    
+    font-size: 20px;
+       
+          
+}
+
+.input{
+    flex-direction: column;
+    font-size: 25px;
+}
+
+}
+
+@media screen and (max-width: 700px) {
+
+.container{
+    max-width: 90%;
+    max-height: 60%;
+}
+
+.result{
+    font-size: 25px; 
+    text-align: justify;   
+}
+
+    
+}
+
+@media screen and (min-width: 700px) {
+
+.container button{
+    width: 300px;
+    height: 65px;
+    font-size: 50px;
+}    
+.input{
+    font-size: 60px;
+    width: 470px;
+    height: 0;
+}
+
+.input input{
+    width: 300px;
+    height: 60px;   
+    font-size: 40px;
+}
+.result{
+    font-size: 45px;    
+}
+    
+        
+}
